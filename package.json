@@ -1,0 +1,11 @@
+{
+  "name": "@mindedtech/config",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mindedtech/kaleidolytics.git"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

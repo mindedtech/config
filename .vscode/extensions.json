@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "fabiospampinato.vscode-terminals",
+    "github.copilot-chat",
+    "graphql.vscode-graphql-syntax",
+    "graphql.vscode-graphql",
+    "ms-azuretools.vscode-docker",
+    "redhat.vscode-yaml",
+    "visualstudioexptteam.intellicode-api-usage-examples",
+    "visualstudioexptteam.vscodeintellicode"
+  ]
+}
