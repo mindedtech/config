@@ -1,0 +1,24 @@
+{
+  "devDependencies": {
+    "@mindedtech/eslint-config": "file:../eslint-config",
+    "@mindedtech/tsconfig": "file:../tsconfig",
+    "esbuild": "^0.20.1",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.mjs"
+    }
+  },
+  "files": [
+    "index.mjs"
+  ],
+  "module": "index.mjs",
+  "name": "@mindedtech/esbuild",
+  "peerDependencies": {
+    "esbuild": "^0.20.1"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}

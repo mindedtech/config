@@ -3,7 +3,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mindedtech/kaleidolytics.git"
+    "url": "git+ssh://git@github.com/mindedtech/config.git"
   },
   "workspaces": [
     "packages/*"

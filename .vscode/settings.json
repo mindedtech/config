@@ -5,9 +5,6 @@
   "[javascriptreact]": {
     "editor.formatOnSave": false
   },
-  "[prisma]": {
-    "editor.defaultFormatter": "ajmnz.prisma-import"
-  },
   "[typescript]": {
     "editor.formatOnSave": false
   },
@@ -47,7 +44,7 @@
     "typescriptreact"
   ],
   "eslint.lintTask.enable": true,
-  "eslint.workingDirectories": ["./packages/*"],
+  "eslint.workingDirectories": [{ "pattern": "./packages/*/" }],
   "tailwindCSS.colorDecorators": false,
   "files.autoSave": "off",
   "files.exclude": {

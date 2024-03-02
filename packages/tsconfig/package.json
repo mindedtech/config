@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "tsc-alias": "^1.8.8"
+  },
+  "files": [
+    "tsconfig.json"
+  ],
+  "main": "tsconfig.json",
+  "name": "@mindedtech/tsconfig",
+  "type": "commonjs",
+  "version": "1.0.0"
+}
