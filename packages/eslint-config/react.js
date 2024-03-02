@@ -2,13 +2,13 @@
  * @type {import("eslint").Linter.Config}
  */
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-var-requires
-const react = require(`./react.js`);
+const base = require(`./index.js`);
 
 /**
  * @type {import("eslint").Linter.Config}
  */
 module.exports = {
-  ...react,
+  ...base,
   extends: [
     `plugin:@typescript-eslint/recommended`,
     `plugin:@typescript-eslint/recommended-requiring-type-checking`,
@@ -18,11 +18,19 @@ module.exports = {
     `plugin:import/errors`,
     `plugin:import/warnings`,
     `plugin:import/typescript`,
-    `plugin:@next/next/recommended`,
-    `plugin:@next/next/core-web-vitals`,
     `prettier`,
   ],
   rules: {
-    ...react.rules,
+    ...base.rules,
+    "react/jsx-curly-brace-presence": [`warn`, `always`],
+    "react/jsx-sort-props": [`warn`],
+    "react/prefer-read-only-props": [`warn`],
+    "react/react-in-jsx-scope": [`off`],
+  },
+  settings: {
+    ...base.settings,
+    react: {
+      version: `detect`,
+    },
   },
 };

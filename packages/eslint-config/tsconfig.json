@@ -1,4 +1,4 @@
 {
   "extends": "@mindedtech/tsconfig",
-  "include": ["*.cjs", ".eslintrc.cjs"]
+  "include": [".eslintrc.js", "*.js"]
 }

@@ -23,11 +23,6 @@ module.exports = {
     },
   ],
   parser: `@typescript-eslint/parser`,
-  parserOptions: {
-    ecmaVersion: 2018,
-    project: `./tsconfig.json`,
-    sourceType: `module`,
-  },
   plugins: [
     `@typescript-eslint`,
     `eslint-plugin-import`,
@@ -104,10 +99,6 @@ module.exports = {
       { endOfLine: `auto`, quoteProps: `consistent`, trailingComma: `all` },
     ],
     "quotes": [`warn`, `backtick`],
-    "react/jsx-curly-brace-presence": [`warn`, `always`],
-    "react/jsx-sort-props": [`warn`],
-    "react/prefer-read-only-props": [`warn`],
-    "react/react-in-jsx-scope": [`off`],
     "sort-destructure-keys/sort-destructure-keys": [`warn`],
     "sort-imports": [`warn`, { ignoreDeclarationSort: true }],
     "sort-keys-fix/sort-keys-fix": [`warn`, `asc`, { natural: true }],
@@ -119,9 +110,6 @@ module.exports = {
     "import/resolver": {
       node: true,
       typescript: true,
-    },
-    "react": {
-      version: `detect`,
     },
   },
 };
