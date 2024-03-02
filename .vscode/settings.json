@@ -1,22 +1,11 @@
 {
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": false
-  },
-  "[typescript]": {
-    "editor.formatOnSave": false
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": false
+  "[javascript][javascriptreact][typescript][typescriptreact]": {
+    "editor.formatOnSave": false // Prevents conflicts with eslint autofix
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "explicit" // Run eslint autofix on save
   },
-  "editor.codeLens": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontLigatures": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Use prettier for formatting when eslint is not available (e.g. HTML)
   "editor.formatOnSave": true,
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
   "editor.guides.bracketPairs": true,
@@ -34,8 +23,9 @@
   "editor.suggestSelection": "recentlyUsed",
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
-  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_", // Break on common separators for quicker Ctrl+Arrow navigation
   "emmet.excludeLanguages": [
+    // Exclude emmet snippets which are usually clutter in a Copilot-enabled environment
     "html",
     "javascript",
     "javascriptreact",
@@ -44,14 +34,13 @@
     "typescriptreact"
   ],
   "eslint.lintTask.enable": true,
-  "eslint.workingDirectories": [{ "pattern": "./packages/*/" }],
-  "tailwindCSS.colorDecorators": false,
+  "eslint.workingDirectories": [{ "pattern": "./packages/*/" }], // Configure eslint for monorepo workspaces
   "files.autoSave": "off",
   "files.exclude": {
-    "**/.next": true
+    "**/.next": true // NextJS build folder
   },
-  "graphql-config.load.rootDir": ".",
-  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "graphql-config.load.rootDir": ".", // Sane defaults for graphql-config
+  "javascript.preferences.importModuleSpecifier": "non-relative", // Prefer absolute imports
   "javascript.referencesCodeLens.enabled": true,
   "javascript.referencesCodeLens.showOnAllFunctions": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -69,17 +58,17 @@
       "recycle": true
     }
   ],
-  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true, // Prefer using local TS SDK in case of conflicts
   "typescript.implementationsCodeLens.enabled": true,
-  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.importModuleSpecifier": "non-relative", // Prefer absolute imports
   "typescript.preferences.preferTypeOnlyAutoImports": true,
   "typescript.referencesCodeLens.enabled": true,
   "typescript.referencesCodeLens.showOnAllFunctions": true,
   "typescript.suggest.paths": true,
-  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.tsdk": "./node_modules/typescript/lib", // Prefer using local TS SDK in case of conflicts
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "vscode-graphql.cacheSchemaFileForLookup": true,
+  "vscode-graphql.cacheSchemaFileForLookup": true, // Cache schema for faster lookups
   "yaml.format.enable": true,
-  "yaml.maxItemsComputed": 5000000,
+  "yaml.maxItemsComputed": 5000000, // Increase max items computed for large YAML files
   "yaml.validate": false
 }
