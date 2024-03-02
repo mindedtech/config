@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@next/eslint-plugin-next": "^14.1.1",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
     "eslint-config-prettier": "^9.1.0",
@@ -12,19 +13,22 @@
   },
   "devDependencies": {
     "@mindedtech/tsconfig": "file:../tsconfig",
+    "@types/eslint": "^8.56.5",
+    "@types/node": "^20.11.24",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
     "typescript": "^5.3.3"
   },
   "files": [
-    ".eslintrc.cjs"
+    "index.js",
+    "next.js"
   ],
-  "main": "./.eslintrc.cjs",
+  "main": "index.js",
   "name": "@mindedtech/eslint-config",
   "peerDependencies": {
     "eslint": "^8.57.0",
     "prettier": "^3.2.5"
   },
   "type": "commonjs",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
