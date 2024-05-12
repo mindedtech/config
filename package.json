@@ -1,11 +1,32 @@
 {
-  "name": "@mindedtech/config",
+  "author": "Elie Rotenberg <elie@rotenberg.io>",
+  "bugs": {
+    "url": "https://github.com/mindedtech/config/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^8.1.2",
+    "npm-check-updates": "^16.14.20"
+  },
+  "homepage": "https://github.com/mindedtech/config#readme",
+  "license": "UNLICENSED",
+  "name": "@mindedtech/config-workspace",
   "private": true,
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/mindedtech/config.git"
   },
+  "scripts": {
+    "ws:build": "lerna run build",
+    "ws:install": "npm i --legacy-peer-deps --prefer-dedupe",
+    "ws:clean": "lerna clean && rm -rf node_modules && rm package-lock.json",
+    "ws:ncu": "ncu -ws --root -u -t minor -i",
+    "ws:ncu:latest": "ncu -ws --root -u -t latest -i",
+    "ws:publish": "lerna publish",
+    "ws:version": "lerna version"
+  },
+  "type": "commonjs",
   "workspaces": [
-    "packages/*"
+    "./packages/*"
   ]
 }
