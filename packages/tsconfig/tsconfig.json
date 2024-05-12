@@ -109,8 +109,8 @@
   },
   "tsc-alias": {
     "fileExtensions": {
-      "inputGlob": "{js,cjs,mjs,ts,d.ts}",
-      "outputCheck": ["js", "cjs", "mjs", "ts", "d.ts"]
+      "inputGlob": "{js,json,cjs,mjs,ts,d.ts}",
+      "outputCheck": ["js", "json", "cjs", "mjs", "ts", "d.ts"]
     },
     "resolveFullPaths": true
   },
