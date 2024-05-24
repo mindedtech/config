@@ -23,7 +23,9 @@
   "files": [
     "index.js",
     "next.js",
-    "react.js"
+    "next-15.js",
+    "react.js",
+    "react-19.js"
   ],
   "main": "index.js",
   "name": "@mindedtech/eslint-config",

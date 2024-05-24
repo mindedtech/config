@@ -2,13 +2,13 @@
  * @type {import("eslint").Linter.Config}
  */
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-var-requires
-const react = require(`./react.js`);
+const react19 = require(`./react-19.js`);
 
 /**
  * @type {import("eslint").Linter.Config}
  */
 module.exports = {
-  ...react,
+  ...react19,
   extends: [
     `plugin:@typescript-eslint/recommended`,
     `plugin:@typescript-eslint/recommended-requiring-type-checking`,
