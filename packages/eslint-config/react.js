@@ -14,6 +14,7 @@ module.exports = {
     `plugin:@typescript-eslint/recommended-requiring-type-checking`,
     `plugin:@typescript-eslint/strict`,
     `plugin:react/recommended`,
+    `plugin:react-compiler`,
     `plugin:prettier/recommended`,
     `plugin:import/errors`,
     `plugin:import/warnings`,
@@ -26,6 +27,7 @@ module.exports = {
     "react/jsx-sort-props": [`warn`],
     "react/prefer-read-only-props": [`warn`],
     "react/react-in-jsx-scope": [`off`],
+    "react-compiler/react-compiler": [`error`],
   },
   settings: {
     ...base.settings,

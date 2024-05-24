@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "tsc-alias": "^1.8.9"
+    "tsc-alias": "^1.8.10"
   },
   "files": [
     "tsconfig.json"
