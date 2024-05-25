@@ -17,12 +17,12 @@
     "url": "git+ssh://git@github.com/mindedtech/config.git"
   },
   "scripts": {
-    "ws:build": "lerna run build",
-    "ws:clean": "lerna clean && rm -rf node_modules && rm package-lock.json",
-    "ws:ncu": "ncu -ws --root -u -t minor -i",
-    "ws:ncu:latest": "ncu -ws --root -u -t latest -i",
-    "ws:publish": "lerna publish",
-    "ws:version": "lerna version"
+    "build": "lerna run build",
+    "clean": "npx lerna clean && rm -rf node_modules && rm package-lock.json",
+    "ncu": "ncu -ws --root -u -t minor -i",
+    "ncu:latest": "ncu -ws --root -u -t latest -i",
+    "publish": "lerna publish",
+    "version": "lerna version"
   },
   "type": "commonjs",
   "workspaces": [
