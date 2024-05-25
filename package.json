@@ -18,7 +18,6 @@
   },
   "scripts": {
     "ws:build": "lerna run build",
-    "ws:install": "npm i --legacy-peer-deps --prefer-dedupe",
     "ws:clean": "lerna clean && rm -rf node_modules && rm package-lock.json",
     "ws:ncu": "ncu -ws --root -u -t minor -i",
     "ws:ncu:latest": "ncu -ws --root -u -t latest -i",
