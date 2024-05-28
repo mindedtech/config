@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "tsc-alias": "^1.8.10"
+    "tsc-alias": "^1.8.10",
+    "typescript-plugin-css-modules": "^5.1.0"
   },
   "files": [
     "tsconfig.json"

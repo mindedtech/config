@@ -62,12 +62,13 @@
     "noImplicitOverride": true /* Ensure overriding members in derived classes are marked with an override modifier. */,
     "noImplicitReturns": true /* Enable error reporting for codepaths that do not explicitly return in a function. */,
     "noImplicitThis": true /* Enable error reporting when 'this' is given the type 'any'. */,
-    "noPropertyAccessFromIndexSignature": true /* Enforces using indexed accessors for keys declared using an indexed type. */,
+    "noPropertyAccessFromIndexSignature": false /* Enforces using indexed accessors for keys declared using an indexed type. */, // Required for typescript-plugin-css-modules
     "noUncheckedIndexedAccess": true /* Add 'undefined' to a type when accessed using an index. */,
     // "sourceMap": true,                                /* Create source map files for emitted JavaScript files. */
     // "inlineSourceMap": true,                          /* Include sourcemap files inside the emitted JavaScript. */
     // "outFile": "./",                                  /* Specify a file that bundles all outputs into one JavaScript file. If 'declaration' is true, also designates a file that bundles all .d.ts output. */
     // "outDir": "./build" /* Specify an output folder for all emitted files. */,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
     "resolveJsonModule": true /* Enable importing .json files. */,
     // "rootDir": "./src" /* Specify the root folder within your source files. */,
     // "baseUrl": "./src" /* Specify the base directory to resolve non-relative module names. */,
