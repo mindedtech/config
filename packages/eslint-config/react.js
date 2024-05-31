@@ -25,6 +25,7 @@ module.exports = {
     "react/jsx-curly-brace-presence": [`warn`, `always`],
     "react/jsx-sort-props": [`warn`],
     "react/prefer-read-only-props": [`warn`],
+    "react/prop-types": [`off`],
     "react/react-in-jsx-scope": [`off`],
   },
   settings: {
