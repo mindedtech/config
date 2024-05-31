@@ -21,8 +21,8 @@
     "clean": "npx lerna clean && rm -rf node_modules && rm package-lock.json",
     "ncu": "ncu -ws --root -u -t minor -i",
     "ncu:latest": "ncu -ws --root -u -t latest -i",
-    "publish": "lerna publish",
-    "version": "lerna version"
+    "npm:publish": "lerna publish",
+    "npm:version": "lerna version"
   },
   "type": "commonjs",
   "workspaces": [
