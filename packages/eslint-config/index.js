@@ -86,7 +86,7 @@ module.exports = {
         patterns: [
           {
             group: [`./*`, `../*`],
-            message: `Use @ imports instead`,
+            message: `Use absolute imports instead (like @ or ~)`,
           },
         ],
       },

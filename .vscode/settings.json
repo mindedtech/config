@@ -70,5 +70,6 @@
   "vscode-graphql.cacheSchemaFileForLookup": true, // Cache schema for faster lookups
   "yaml.format.enable": true,
   "yaml.maxItemsComputed": 5000000, // Increase max items computed for large YAML files
-  "yaml.validate": false
+  "yaml.validate": false,
+  "window.title": "${rootName}${separator}${activeEditorShort}"
 }
