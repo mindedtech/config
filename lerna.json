@@ -3,5 +3,10 @@
   "version": "1.3.4",
   "packages": [
     "packages/*"
+  ],
+  "forcePublish": [
+    "@mindedtech/esbuild",
+    "@mindedtech/eslint-config",
+    "@mindedtech/tsconfig"
   ]
 }
