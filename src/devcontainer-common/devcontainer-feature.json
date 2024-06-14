@@ -60,10 +60,6 @@
         "editor.quickSuggestionsDelay": 0,
         "editor.snippetSuggestions": "none",
         "editor.suggest.localityBonus": true,
-        "editor.suggest.showSnippets": false,
-        "editor.suggest.snippetsPreventQuickSuggestions": false,
-        "editor.suggestOnTriggerCharacters": true,
-        "editor.suggestSelection": "recentlyUsed",
         "editor.tabCompletion": "on",
         "editor.tabSize": 2,
         "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_", // Break on common separators for quicker Ctrl+Arrow navigation

@@ -2,7 +2,7 @@
 
 ## Dev Container Features
 
-To include the feature to a **dev container** you have to add the following key to the project :
+To include the feature to a **dev container** you have to add the following key to the project:
 
 ```
 "features": {
