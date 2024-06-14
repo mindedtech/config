@@ -1,6 +1,6 @@
 {
     "name": "common-extensions-and-settings",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "A set of common VSCode extensions and settings for all projects.",
     "main": "devcontainer-feature.json",
     "scripts": {},

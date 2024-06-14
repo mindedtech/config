@@ -1,6 +1,6 @@
 {
   "id": "common-extensions-and-settings",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "name": "Common Extensions and Settings",
   "description": "A set of common VS Code extensions and settings for the project.",
   "options": {
