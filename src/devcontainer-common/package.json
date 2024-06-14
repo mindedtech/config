@@ -1,6 +1,6 @@
 {
-    "name": "common-extensions-and-settings",
-    "version": "0.0.5",
+    "name": "@mosaicdb/common-extensions-and-settings",
+    "version": "0.0.2",
     "description": "A set of common VSCode extensions and settings for all projects.",
     "main": "devcontainer-feature.json",
     "scripts": {},
@@ -12,6 +12,15 @@
         "settings"
     ],
     "files": [
-        "devcontainer-feature.json"
-    ]
+        "devcontainer-feature.json",
+        "install.sh"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mindedtech/config.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mindedtech/config/issues"
+    },
+    "homepage": "https://github.com/mindedtech/config#readme"
 }

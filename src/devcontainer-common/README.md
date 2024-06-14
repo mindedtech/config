@@ -4,6 +4,6 @@ To include the feature to a **dev container** you have to add the following key 
 
 ```
 "features": {
-  "npm:common-extensions-and-settings@0.0.5": {}
+  "npm:@mosaicdb/common-extensions-and-settings@0.0.2": {}
 },
 ```
