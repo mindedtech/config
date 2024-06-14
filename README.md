@@ -1,11 +1,13 @@
 # Config
 
-## Dev Container Features
+Packages usefull for other projects.
 
-To include the feature to a **dev container** you have to add the following key to the project:
+## Packages
 
-```
-"features": {
-  "ghcr.io/mindedtech/config/devcontainer-common/common-extensions-and-settings:0.0.1": {}
-},
-```
+- Esbuild
+- Eslint-config
+- Tsconfig
+
+## Devcontainer features
+
+- common-extensions-and-settings
