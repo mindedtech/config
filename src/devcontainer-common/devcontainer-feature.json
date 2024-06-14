@@ -1,0 +1,120 @@
+{
+  "id": "common-extensions-and-settings",
+  "version": "0.0.1",
+  "name": "Common Extensions and Settings",
+  "description": "A set of common VS Code extensions and settings for the project.",
+  "options": {
+    "addExtensions": {
+      "type": "boolean",
+      "default": true,
+      "description": "Add common VS Code extensions."
+    },
+    "configureSettings": {
+      "type": "boolean",
+      "default": true,
+      "description": "Configure common VS Code settings."
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "fabiospampinato.vscode-terminals",
+        "graphql.vscode-graphql-syntax",
+        "graphql.vscode-graphql",
+        "ms-azuretools.vscode-docker",
+        "redhat.vscode-yaml",
+        "visualstudioexptteam.intellicode-api-usage-examples",
+        "visualstudioexptteam.vscodeintellicode",
+        "atlassian.atlascode",
+        "github.copilot-chat",
+        "bierner.markdown-preview-github-styles",
+        "DavidAnson.vscode-markdownlint",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode",
+        "foxundermoon.shell-format",
+        "mdickin.markdown-shortcuts",
+        "ms-vsliveshare.vsliveshare",
+        "task.vscode-task",
+        "timonwong.shellcheck",
+        "vivaxy.vscode-conventional-commits",
+        "yzhang.markdown-all-in-one",
+        "github.vscode-github-actions"
+      ],
+      "settings": {
+        "[javascript][javascriptreact][typescript][typescriptreact]": {
+          "editor.formatOnSave": false // Prevents conflicts with eslint autofix
+        },
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "explicit" // Run eslint autofix on save
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode", // Use prettier for formatting when eslint is not available (e.g. HTML)
+        "editor.formatOnSave": true,
+        "editor.gotoLocation.multipleTypeDefinitions": "goto",
+        "editor.guides.bracketPairs": true,
+        "editor.quickSuggestions": {
+          "comments": "on",
+          "other": "on",
+          "strings": "on"
+        },
+        "editor.quickSuggestionsDelay": 0,
+        "editor.snippetSuggestions": "none",
+        "editor.suggest.localityBonus": true,
+        "editor.tabCompletion": "on",
+        "editor.tabSize": 2,
+        "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_", // Break on common separators for quicker Ctrl+Arrow navigation
+        "emmet.excludeLanguages": [
+          // Exclude emmet snippets which are usually clutter in a Copilot-enabled environment
+          "html",
+          "javascript",
+          "javascriptreact",
+          "markdown",
+          "typescript",
+          "typescriptreact"
+        ],
+        "eslint.lintTask.enable": true,
+        "eslint.workingDirectories": [{ "pattern": "./packages/*/" }], // Configure eslint for monorepo workspaces
+        "files.autoSave": "off",
+        "files.exclude": {
+          "**/.next": true // NextJS build folder
+        },
+        "graphql-config.load.rootDir": ".", // Sane defaults for graphql-config
+        "javascript.preferences.importModuleSpecifier": "non-relative", // Prefer absolute imports
+        "javascript.referencesCodeLens.enabled": true,
+        "javascript.referencesCodeLens.showOnAllFunctions": true,
+        "javascript.updateImportsOnFileMove.enabled": "always",
+        "json.format.enable": true,
+        "references.preferredLocation": "view",
+        "terminal.integrated.enablePersistentSessions": false,
+        "terminals.autokill": true,
+        "terminals.autorun": false,
+        "terminals.terminals": [
+          {
+            "cwd": "[workspaceFolder]",
+            "focus": true,
+            "name": "root/shell",
+            "open": true,
+            "recycle": true
+          }
+        ],
+        "typescript.enablePromptUseWorkspaceTsdk": true, // Prefer using local TS SDK in case of conflicts
+        "typescript.implementationsCodeLens.enabled": true,
+        "typescript.preferences.importModuleSpecifier": "non-relative", // Prefer absolute imports
+        "typescript.preferences.preferTypeOnlyAutoImports": true,
+        "typescript.referencesCodeLens.enabled": true,
+        "typescript.referencesCodeLens.showOnAllFunctions": true,
+        "typescript.suggest.paths": true,
+        "typescript.tsdk": "./node_modules/typescript/lib", // Prefer using local TS SDK in case of conflicts
+        "typescript.updateImportsOnFileMove.enabled": "always",
+        "vscode-graphql.cacheSchemaFileForLookup": true, // Cache schema for faster lookups
+        "yaml.format.enable": true,
+        "yaml.maxItemsComputed": 5000000, // Increase max items computed for large YAML files
+        "yaml.validate": false,
+        "window.title": "${rootName}${separator}${activeEditorShort}",
+        "[dotenv]": {
+          "editor.defaultFormatter": "foxundermoon.shell-format"
+        }
+      }
+    }
+  }
+}
