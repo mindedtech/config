@@ -5,7 +5,7 @@
   },
   "files": [
     "tsconfig.json",
-    "tsconfig.transpileDeclarationOnly"
+    "tsconfig.transpileDeclarationOnly.json"
   ],
   "main": "tsconfig.json",
   "name": "@mindedtech/tsconfig",
