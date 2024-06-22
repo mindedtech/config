@@ -4,7 +4,8 @@
     "typescript-plugin-css-modules": "^5.1.0"
   },
   "files": [
-    "tsconfig.json"
+    "tsconfig.json",
+    "tsconfig.transpileDeclarationOnly"
   ],
   "main": "tsconfig.json",
   "name": "@mindedtech/tsconfig",
