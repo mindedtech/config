@@ -18,16 +18,17 @@
   },
   "scripts": {
     "build": "lerna run build",
-    "clean": "npx lerna clean && rm -rf node_modules && rm package-lock.json",
+    "clean": "pnpx lerna clean && rm -rf node_modules && rm package-lock.json",
     "npm:publish": "lerna publish",
     "npm:publish:dev": "lerna publish --canary --preid dev --dist-tag dev",
-    "npm:update:dev": "npx npm-check-updates -ws --root -u -i -t @dev --pre 1",
-    "npm:update:pre": "npx npm-check-updates -ws --root -u -i -t @latest --pre 1",
-    "npm:update:minor": "npx npm-check-updates -ws --root -u -i -t minor",
-    "npm:update:latest": "npx npm-check-updates -ws --root -u -i -t latest"
+    "npm:update:dev": "pnpx npm-check-updates -ws --root -u -i -t @dev --pre 1",
+    "npm:update:pre": "pnpx npm-check-updates -ws --root -u -i -t @latest --pre 1",
+    "npm:update:minor": "pnpx npm-check-updates -ws --root -u -i -t minor",
+    "npm:update:latest": "pnpx npm-check-updates -ws --root -u -i -t latest"
   },
   "type": "commonjs",
   "workspaces": [
     "./packages/*"
-  ]
+  ],
+  "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a"
 }

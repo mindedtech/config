@@ -8,5 +8,6 @@
     "@mindedtech/esbuild",
     "@mindedtech/eslint-config",
     "@mindedtech/tsconfig"
-  ]
+  ],
+  "npmClient": "pnpm"
 }
