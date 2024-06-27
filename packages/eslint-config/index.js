@@ -58,7 +58,6 @@ module.exports = {
     "import/consistent-type-specifier-style": [`warn`, `prefer-top-level`],
     "import/namespace": [`warn`],
     "import/no-cycle": [`error`],
-    "import/no-relative-packages": [`warn`],
     "import/order": [
       `warn`,
       {
