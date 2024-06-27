@@ -80,17 +80,6 @@ module.exports = {
         "newlines-between": `always`,
       },
     ],
-    "no-restricted-imports": [
-      `warn`,
-      {
-        patterns: [
-          {
-            group: [`./*`, `../*`],
-            message: `Use absolute imports instead (like @ or ~)`,
-          },
-        ],
-      },
-    ],
     "no-useless-rename": [`warn`],
     "object-shorthand": [`warn`, `always`],
     "prettier/prettier": [
