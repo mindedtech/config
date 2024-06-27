@@ -20,5 +20,5 @@
     "esbuild": "^0.20.1"
   },
   "type": "module",
-  "version": "1.6.0"
+  "version": "1.7.0"
 }
