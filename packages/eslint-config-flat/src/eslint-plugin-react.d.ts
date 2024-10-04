@@ -6,5 +6,6 @@ declare module "eslint-plugin-react" {
       flat: Record<"recommended" | "jsx-runtime", ConfigWithExtends>;
     };
   };
+  exports = plugin;
   export = plugin;
 }

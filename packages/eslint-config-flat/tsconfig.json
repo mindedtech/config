@@ -1,4 +1,11 @@
 {
-  "extends": "@mindedtech/tsconfig",
-  "include": ["*.js", "*.ts"]
+  "references": [
+    {
+      "path": "./tsconfig.build.json"
+    },
+    {
+      "path": "./tsconfig.eslint.json"
+    }
+  ],
+  "include": []
 }
