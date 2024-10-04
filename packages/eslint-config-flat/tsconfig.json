@@ -1,0 +1,4 @@
+{
+  "extends": "@mindedtech/tsconfig",
+  "include": ["*.js", "*.ts"]
+}
