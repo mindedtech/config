@@ -10,7 +10,7 @@ import sortKeysFixPlugin from "eslint-plugin-sort-keys-fix";
 import globals from "globals";
 import * as ts from "typescript-eslint";
 
-export type FlatConfigArray = ReturnType<(typeof ts)["config"]>;
+export type FlatConfigArray = ReturnType<(typeof ts)[`config`]>;
 
 const config: FlatConfigArray = ts.config(
   js.configs.recommended,
@@ -38,7 +38,7 @@ const config: FlatConfigArray = ts.config(
     rules: {
       ...reactHooksPlugin.configs.recommended.rules,
       ...reactPlugin.configs.flat.recommended.rules,
-      ...reactPlugin.configs.flat["jsx-runtime"].rules,
+      ...reactPlugin.configs.flat[`jsx-runtime`].rules,
       "@next/next/no-html-link-for-pages": 0,
       "@typescript-eslint/consistent-type-definitions": [`warn`, `type`],
       "@typescript-eslint/consistent-type-exports": [`warn`],
@@ -97,6 +97,7 @@ const config: FlatConfigArray = ts.config(
         `warn`,
         { endOfLine: `auto`, quoteProps: `consistent`, trailingComma: `all` },
       ],
+      "quotes": [`warn`, `backtick`],
       "react/jsx-curly-brace-presence": [`warn`, `always`],
       "react/jsx-sort-props": [`warn`],
       "react/prefer-read-only-props": [`warn`],
@@ -106,8 +107,14 @@ const config: FlatConfigArray = ts.config(
     },
     settings: {
       react: {
-        version: "detect",
+        version: `detect`,
       },
+    },
+  },
+  {
+    files: [`**/*.d.ts`],
+    rules: {
+      quotes: [`warn`, `double`],
     },
   },
 );

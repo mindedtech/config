@@ -10,8 +10,8 @@ const flatCompat = new FlatCompat({
 });
 
 const flatCompatConfig = fixupConfigRules([
-  ...flatCompat.extends("next/recommended"),
-  ...flatCompat.extends("next/core-web-vitals"),
+  ...flatCompat.extends(`next/recommended`),
+  ...flatCompat.extends(`next/core-web-vitals`),
 ]);
 
 const config: FlatConfigArray = [
