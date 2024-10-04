@@ -71,5 +71,8 @@
   "yaml.format.enable": true,
   "yaml.maxItemsComputed": 5000000, // Increase max items computed for large YAML files
   "yaml.validate": false,
-  "window.title": "${rootName}${separator}${activeEditorShort}"
+  "window.title": "${rootName}${separator}${activeEditorShort}",
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  }
 }
