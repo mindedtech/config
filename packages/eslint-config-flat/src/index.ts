@@ -58,6 +58,10 @@ const config: FlatConfigArray = ts.config(
           selector: `variableLike`,
         },
       ],
+      "@typescript-eslint/no-confusing-void-expression": [
+        `warn`,
+        { ignoreArrowShorthand: true, ignoreVoidOperator: true },
+      ],
       "@typescript-eslint/no-misused-promises": [`warn`],
       "@typescript-eslint/no-unsafe-argument": [`warn`],
       "@typescript-eslint/no-unsafe-assignment": [`warn`],
