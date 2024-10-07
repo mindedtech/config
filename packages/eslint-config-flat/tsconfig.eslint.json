@@ -1,9 +1,9 @@
 {
-  "extends": "@mindedtech/tsconfig",
   "compilerOptions": {
     "composite": true,
-    "noEmit": true,
-    "emitDeclarationOnly": false
+    "emitDeclarationOnly": false,
+    "noEmit": true
   },
+  "extends": "@mindedtech/tsconfig",
   "include": ["*.js", "src/**/*.ts", "src/**/*.d.ts"]
 }
