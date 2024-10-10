@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "composite": true,
+    "emitDeclarationOnly": false,
+    "outDir": "./build",
+    "rootDir": "./src"
+  },
+  "exclude": ["build/**/*"],
+  "extends": "@mindedtech/tsconfig",
+  "include": ["src/**/*.ts", "src/**/*.d.ts"]
+}
