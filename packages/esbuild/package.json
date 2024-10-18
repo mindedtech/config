@@ -2,9 +2,9 @@
   "devDependencies": {
     "@mindedtech/eslint-config": "file:../eslint-config",
     "@mindedtech/tsconfig": "file:../tsconfig",
-    "esbuild": "^0.21.5",
-    "eslint": "^8.57.0",
-    "prettier": "^3.3.2"
+    "esbuild": "^0.24.0",
+    "eslint": "^8.57.1",
+    "prettier": "^3.3.3"
   },
   "exports": {
     ".": {
