@@ -70,6 +70,10 @@ const config: FlatConfigArray = ts.config(
         `warn`,
         { argsIgnorePattern: `^_` },
       ],
+      "@typescript-eslint/restrict-template-expressions": [
+        `error`,
+        { allowBoolean: true, allowNumber: true },
+      ],
       "@typescript-eslint/switch-exhaustiveness-check": [`error`],
       "import-x/consistent-type-specifier-style": [`warn`, `prefer-top-level`],
       "import-x/namespace": [`warn`],
