@@ -1,9 +1,7 @@
-/* eslint-disable import-x/no-named-as-default-member */
 import js from "@eslint/js";
 import importX from "eslint-plugin-import-x";
 import prettierPlugin from "eslint-plugin-prettier";
 import prettierConfig from "eslint-plugin-prettier/recommended";
-// eslint-disable-next-line import-x/default
 import reactPlugin from "eslint-plugin-react";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
 import sortKeysFixPlugin from "eslint-plugin-sort-keys-fix";

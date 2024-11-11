@@ -1,7 +1,7 @@
 import { fixupConfigRules } from "@eslint/compat";
 import { FlatCompat } from "@eslint/eslintrc";
 
-import baseConfig from "./index";
+import baseConfig from "./index.js";
 
 import type { FlatConfigArray } from "./index";
 import type { FixupConfigArray } from "@eslint/compat";
